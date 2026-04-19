@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>bhackariCTF</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&display=swap');
+
+    *, *::before, *::after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      border-top: 2px solid #c9cacc;
+    }
+
+    body {
+      background-color: #1d1f21;
+      color: #c9cacc;
+      font-family: 'JetBrains Mono', 'Courier New', monospace;
+      font-size: 14px;
+      line-height: 1.725;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 2rem;
+    }
+
+    .container {
+      max-width: 48rem;
+      width: 100%;
+      text-align: center;
+    }
+
+    .logo {
+      width: 64px;
+      height: 64px;
+      margin: 0 auto 2rem;
+      filter: grayscale(100%);
+      transition: filter 0.3s ease;
+    }
+
+    .logo:hover {
+      filter: none;
+    }
+
+    h1 {
+      font-size: 1.5em;
+      font-weight: 700;
+      letter-spacing: 0.01em;
+      color: #bc832b;
+      margin-bottom: 0.5rem;
+    }
+
+    h1::before {
+      content: '# ';
+      color: #bc832b;
+    }
+
+    .tagline {
+      color: #c9cacc;
+      margin-bottom: 3rem;
+      font-size: 0.9rem;
+    }
+
+    .coming-soon {
+      display: inline-block;
+      border: 1px dotted #666;
+      border-radius: 2px;
+      padding: 1.5rem 3rem;
+      margin-bottom: 3rem;
+    }
+
+    .coming-soon .label {
+      font-size: 0.75rem;
+      color: #666;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      margin-bottom: 0.5rem;
+    }
+
+    .coming-soon .message {
+      font-size: 1.2rem;
+      font-weight: 700;
+      color: #d480aa;
+    }
+
+    .coming-soon .message::before {
+      content: '> ';
+      color: #bc832b;
+    }
+
+    .links {
+      display: flex;
+      gap: 1.5rem;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+
+    .links a {
+      color: #c9cacc;
+      text-decoration: none;
+      font-size: 0.8rem;
+      background-image: linear-gradient(#c9cacc, #c9cacc);
+      background-size: 100% 1px;
+      background-repeat: no-repeat;
+      background-position: bottom left;
+      transition: background-image 0.2s ease;
+      padding-bottom: 2px;
+    }
+
+    .links a:hover {
+      background-image: linear-gradient(#d480aa, #d480aa);
+      color: #d480aa;
+    }
+
+    footer {
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+      padding: 1rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-size: 0.75rem;
+      color: #666;
+    }
+
+    @media (max-width: 480px) {
+      .coming-soon {
+        padding: 1rem 1.5rem;
+      }
+
+      footer {
+        flex-direction: column;
+        gap: 0.25rem;
+        text-align: center;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>bhackariCTF</h1>
+    <p class="tagline">challenges, flags, and fun — stay tuned</p>
+
+    <div class="coming-soon">
+      <p class="label">status</p>
+      <p class="message">coming soon</p>
+    </div>
+
+    <div class="links">
+      <a href="https://bhackari.github.io" target="_blank" rel="noopener">team blog</a>
+      <a href="https://ctftime.org" target="_blank" rel="noopener">ctftime</a>
+    </div>
+  </div>
+
+  <footer>
+    <span>&copy; 2026 bhackari</span>
+    <span>CTF platform — coming soon</span>
+  </footer>
+</body>
+</html>
